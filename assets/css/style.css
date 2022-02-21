@@ -564,3 +564,29 @@ footer >p > a {
 
     
 }
+
+@media(max-width:490px) {
+    .s8-content-text {
+        height: 350px;
+    }
+
+    .s8-btn {
+        margin-top:50px;
+    }
+
+    .section-9 {
+        height: 1000px;
+    }
+
+    .s9-box1 {
+        height: 900px;
+    }
+
+    .nav-links li {
+        padding:0 5px;
+    }
+   
+}
+
+
+
