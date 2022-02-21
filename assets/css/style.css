@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header content */
+nav {
+    width:100%;
+    padding:10px;
+    background: #24252a;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding:0 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color:#0088a9;
+}
+
+.btn {
+    padding: 9px 25px;
+    background: rgba(0,136,169,1);
+    border-radius: 50px;
+    cursor: pointer;
+    border:none;
+    color:white;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background:rgba(0,136,169,0.8) ;
+}
+
+/* ATF Content*/
+
+.section-1 {
+    width:100%;
+    height: 500px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    position:relative;
+    color:white;
+}
+
+.atf-wrapper {
+    width:70%;
+    height: 300px;
+    /* background: wheat; */
+    text-align: center;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.atf-wrapper h1 {
+    font-size: 60px;
+}
+
+.atf-button {
+    display: inline-block;
+    padding:9px 25px;
+    background: rgba(0,136,169,1);
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.atf-button:hover {
+   background: rgba(0,136,169,0.8);
+}
+
+.background {
+    width:100%;
+    height: 500px;
+    background: url(../../images/atf.jpg);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+
+/* welcome message content*/
+
+.section-2 {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    background: #eaeaea;
+
+}
+
+.welcome-message {
+    width:80%;
+    padding: 2em;
+    margin: auto;
+    border: 1px solid #555555;
+    border-radius: 100px 0 100px 0;
+
+}
+
+.welcome-message h2 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* about content */
+
+.section-3 {
+    width:100%;
+    display: flex;
+    background: #24252a;
+    color: white;
+    padding:1px;
+    flex-wrap: wrap;
+}
+
+.s3-image {
+    flex: 1;
+    height: 400px;
+    flex-basis: 400px;
+    margin-bottom: 10px;
+}
+
+.s3-content {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-basis: 400px;
+}
+
+.s3-content-center {
+    margin: auto;
+    width:80%;
+}
+
+.s3-content-center h2,
+.s3-content-center p,
+.s3-content-center a {margin-bottom: 20px;
+  
+}
+
+.s3-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* barista card content */
+
+.section-4 {
+    width: 100%;
+    display: flex;
+    padding:1em;
+    background: #eaeaea;
+}
+
+.card-wrapper {
+    width:75%;
+    /* background: tomato; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barista {
+    flex-basis:30%;
+    text-align: center;
+    background: #24252a;
+    padding: 1em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.barista-image-wrapper {
+    width:150px;
+    height: 150px;
+    border-radius: 100px;
+    background: coral;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.barista-image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.barista p,
+.barista a {
+    margin-bottom: 20px;
+}
+
+/* divider content */
+.section-5 {
+    width:100%;
+    padding:1em;
+    display: flex;
+    background: #24252a;
+}
+
+.s5-content {
+    margin: auto;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* background: tomato; */
+    width:70%;
+    justify-content: space-between;
+}
+
+/* promotional video */
+.section-6 {
+    width:100%;
+    padding:1em;
+    display: flex;
+}
+
+.s6-video {
+    flex: 1;
+}
+
+.s6-content {
+    flex:1;
+}
+
+.s6-wrapper {
+    width:70% ;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+.s6-video {
+    flex:1;
+    height: 350px;
+}
+
+.s6-video video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.s6-content {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.section-7 {
+    width:100%;
+    padding:1em;
+    background: #24252a;
+    color:white;
+    text-align: center;
+}
+
+.section-8 {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+
+}
+
+.background-2 {
+    width: 100%;
+    height: 500px;
+    background:url(../../images/dinning.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+}
+
+.s8-content-text {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content:space-evenly;
+    background: rgba(0,0,0,0.4);
+    padding: auto 10px auto 10px;
+}
+
+
+.s8-text1 {
+    flex-basis: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s8-text1 h2 {
+    color:#0088a9;
+    padding-bottom: 10px;
+   
+}
+
+.s8-text1 li {
+    color:white;
+    list-style: none;
+}
+
+
+
+.s8-text2 {
+    flex-basis: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s8-text2 h2 {
+    color:#0088a9;
+    padding-bottom: 10px;
+   
+}
+
+.s8-text2 li {
+    color:white;
+    list-style: none;
+}
+
+
+
+.s8-text3 {
+    flex-basis: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s8-text3 h2 {
+    color:#0088a9;
+    padding-bottom: 10px;
+    
+}
+
+.s8-text3 li {
+    color:white;
+    list-style: none;
+}
+
+.center {
+    margin: auto;
+    
+}
+
+.s8-btn {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.section-8a {
+    width:100%;
+    padding:1em;
+    background: #24252a;
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-9 {
+    width: 100%;
+    height: 700px;
+    background: #24252a;
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+
+
+.s9-box1 {
+    margin: auto;
+    width:70%;
+    height: 600px;
+    background:#0088a9;
+    display: flex;
+}
+
+.s9-box2 {
+    flex-basis: 50%;
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+}
+
+.s9-box4 {
+    flex: 1;
+    background:url(../../images/moon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.s9-box5 {
+    flex: 1;
+    background:#0088a9;
+    display: flex;
+    color: white;
+}
+
+.s9-box5 p {
+    margin: auto;
+    width: 80%;
+}
+
+.s9-box6 {
+    flex: 1;
+    background:url(../../images/night-sky.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+
+.s9-box3 {
+    flex-basis: 50%;
+    background: teal;
+    display: flex;
+    flex-direction: column;
+}
+
+.s9-box7 {
+    flex: 1;
+    background: #0088a9;
+    display: flex;
+    color: white;
+}
+
+.s9-box7 p {
+    margin: auto;
+    width: 80%;
+}
+
+.s9-box8 {
+    flex: 1;
+    background:url(../../images/moon-land.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.s9-box9 {
+    flex: 1;
+    background:#0088a9;
+    display: flex;
+    color: white;
+}
+.s9-box9 p {
+    margin: auto;
+    width: 80%;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    padding: 1.5em;
+    text-align: center;
+    color: white;
+    background: #24252a;
+}
+
+footer > p {
+    margin: auto;
+    text-decoration: none;
+    color:rgba(0,136,169,1) ;
+}
+
+footer >p > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media(max-width:768px) {
+    .card-wrapper{
+        display: block;
+    }
+    
+    .s5-content {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+
+    .s5-content p {
+        margin-bottom: 10px;
+    }
+
+    .s6-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .s6-content-text {
+        margin-bottom: 10px;
+    }
+
+    .s6-content-text h2 {
+        margin-bottom: 10px;
+    }
+
+    .s6-content {
+        align-items: center;
+    }
+
+    .s3-image {
+        margin-bottom: 10px;
+    }
+
+    .s8-content-text {
+        height: 250px;
+    }
+
+    .center {
+        margin-top: 10px;
+    }
+
+    .s8-btn {
+        margin-top:72px;
+    }
+    
+    
+
+    
+}
